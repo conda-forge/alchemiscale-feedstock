@@ -1,5 +1,5 @@
 {% set name = "alchemiscale" %}
-{% set version = "0.1.4" %}
+{% set version = "0.2.0" %}
 
 package:
   name: alchemiscale
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/openforcefield/alchemiscale/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: d46f372adcaa257eb909587f668e791915188795b60db0c11bbfd6bfe9ac1a84
+  sha256: 83ab7d8dabafd2e949cf399629fb2afd9c1befb0495fbd1b7d61dd895df1e6db
 
 build:
   number: 0
@@ -37,7 +37,7 @@ outputs:
         - numba
         - pymbar >=3.0.6,<4.0a0
         - async-lru
-    
+
     test:
       imports:
         - alchemiscale
@@ -73,7 +73,7 @@ outputs:
         - async-lru
         - nest-asyncio
 
-    
+
     test:
       imports:
         - alchemiscale
@@ -83,7 +83,7 @@ outputs:
         - pip check
 
 about:
-  home: https://github.com/openforcefield/alchemiscale  
+  home: https://github.com/openforcefield/alchemiscale
   summary: 'high-throughput alchemical free energy execution system'
   description: |
     a high-throughput alchemical free energy execution system 
