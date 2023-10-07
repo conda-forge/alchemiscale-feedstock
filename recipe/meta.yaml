@@ -1,5 +1,5 @@
 {% set name = "alchemiscale" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: alchemiscale
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/openforcefield/alchemiscale/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 83ab7d8dabafd2e949cf399629fb2afd9c1befb0495fbd1b7d61dd895df1e6db
+  sha256: 1ae616eb1067cc9848b2fe29c429add0f10d300d03e1ef74b3f4cf6ff70fb073
 
 build:
   number: 0
