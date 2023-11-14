@@ -1,5 +1,5 @@
 {% set name = "alchemiscale" %}
-{% set version = "0.2.1-3" %}
+{% set version = "0.2.1" %}
 
 package:
   name: alchemiscale
@@ -10,7 +10,7 @@ source:
   sha256: c25e8dc9c7b549de5dbed7ec7b25f622f4890bebad1fd300ce047c07c66cdf10
 
 build:
-  number: 0
+  number: 3
 
 outputs:
   - name: alchemiscale-compute
@@ -24,8 +24,8 @@ outputs:
         - pip
       run:
         - python >=3.9
-        - gufe=0.9.4
-        - openfe=0.13.0
+        - gufe=0.9.5
+        - openfe=0.14.0
         - requests
         - click
         - httpx
@@ -57,8 +57,8 @@ outputs:
         - pip
       run:
         - python >=3.9
-        - gufe=0.9.4
-        - openfe=0.13.0
+        - gufe=0.9.5
+        - openfe=0.14.0
         - requests
         - click
         - httpx
