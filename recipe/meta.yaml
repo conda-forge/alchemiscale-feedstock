@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/openforcefield/alchemiscale/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: c25e8dc9c7b549de5dbed7ec7b25f622f4890bebad1fd300ce047c07c66cdf10
+  sha256: 1ae616eb1067cc9848b2fe29c429add0f10d300d03e1ef74b3f4cf6ff70fb073
 
 build:
   number: 3
