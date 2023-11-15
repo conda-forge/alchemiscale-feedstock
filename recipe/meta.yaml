@@ -10,7 +10,7 @@ source:
   sha256: 1ae616eb1067cc9848b2fe29c429add0f10d300d03e1ef74b3f4cf6ff70fb073
 
 build:
-  number: 0
+  number: 3
 
 outputs:
   - name: alchemiscale-compute
@@ -24,8 +24,8 @@ outputs:
         - pip
       run:
         - python >=3.9
-        - gufe=0.9.4
-        - openfe=0.13.0
+        - gufe=0.9.5
+        - openfe=0.14.0
         - requests
         - click
         - httpx
@@ -57,8 +57,8 @@ outputs:
         - pip
       run:
         - python >=3.9
-        - gufe=0.9.4
-        - openfe=0.13.0
+        - gufe=0.9.5
+        - openfe=0.14.0
         - requests
         - click
         - httpx
