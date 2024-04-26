@@ -10,7 +10,7 @@ source:
   sha256: fa12e8f7452991ae3301d0f7729b8c2c4c3ac3e45435f7513e1d83d4f2ca65d0
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: alchemiscale-compute
@@ -22,6 +22,7 @@ outputs:
       host:
         - python >=3.9
         - pip
+        - versioningit
       run:
         - python >=3.9
         - gufe=0.9.5
@@ -55,6 +56,7 @@ outputs:
       host:
         - python >=3.9
         - pip
+        - versioningit
       run:
         - python >=3.9
         - gufe=0.9.5
@@ -81,6 +83,7 @@ outputs:
         - pip
       commands:
         - pip check
+        - python -c "import alchemiscale; print(alchemiscale.__version__)"
 
 about:
   home: https://github.com/openforcefield/alchemiscale
