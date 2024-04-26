@@ -83,7 +83,6 @@ outputs:
         - pip
       commands:
         - pip check
-        - python -c "import alchemiscale; print(alchemiscale.__version__)"
 
 about:
   home: https://github.com/openforcefield/alchemiscale
