@@ -54,10 +54,10 @@ outputs:
     test:
       imports:
         - alchemiscale
-      requires:
-        - pip
+      files:
+        - test_stack_imports.py
       commands:
-        - pip check
+        - python test_stack_imports.py
 
   - name: alchemiscale-compute
     script: build_package.sh
@@ -81,10 +81,10 @@ outputs:
     test:
       imports:
         - alchemiscale
-      requires:
-        - pip
+      files:
+        - test_stack_imports.py
       commands:
-        - pip check
+        - python test_stack_imports.py
 
   - name: alchemiscale-client
     script: build_package.sh
@@ -110,10 +110,10 @@ outputs:
     test:
       imports:
         - alchemiscale
-      requires:
-        - pip
+      files:
+        - test_stack_imports.py
       commands:
-        - pip check
+        - python test_stack_imports.py
 
 about:
   home: https://github.com/openforcefield/alchemiscale
