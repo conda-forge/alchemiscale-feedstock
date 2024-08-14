@@ -1,5 +1,5 @@
 {% set name = "alchemiscale" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: alchemiscale
@@ -7,12 +7,58 @@ package:
 
 source:
   url: https://github.com/openforcefield/alchemiscale/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: fa12e8f7452991ae3301d0f7729b8c2c4c3ac3e45435f7513e1d83d4f2ca65d0
+  sha256: 1730dfdcda8d51c5f3b44338279741eae6667773a84e36a0869167d2c45757ed
 
 build:
-  number: 1
+  number: 0
 
 outputs:
+  - name: alchemiscale-server
+    script: build_package.sh
+    build:
+      noarch: python
+
+    requirements:
+      host:
+        - python >=3.10
+        - pip
+        - versioningit
+      run:
+        - python >=3.10
+        - gufe>=1.0.0
+        - requests
+        - click
+        - httpx
+        - pydantic<2.0a0
+        - async-lru
+
+        ## state store
+        - neo4j-python-driver
+        - py2neo
+        - monotonic
+
+        ## object store
+        - boto3        # aws s3
+
+        ## api(s)
+        - fastapi
+        - uvicorn
+        - gunicorn
+        - python-jose
+        - passlib
+        - bcrypt
+        - python-multipart
+        - starlette
+        - cryptography
+
+    test:
+      imports:
+        - alchemiscale
+      files:
+        - test_stack_imports.py
+      commands:
+        - python test_stack_imports.py
+
   - name: alchemiscale-compute
     script: build_package.sh
     build:
@@ -20,32 +66,25 @@ outputs:
 
     requirements:
       host:
-        - python >=3.9
+        - python >=3.10
         - pip
         - versioningit
       run:
-        - python >=3.9
-        - gufe=0.9.5
-        - openfe=0.14.0
+        - python >=3.10
+        - gufe>=1.0.0
         - requests
         - click
         - httpx
         - pydantic<2.0a0
-        - openmoltools
-        - cloudpathlib
-        - dask
-        - distributed
-        - numba
-        - pymbar >=3.0.6,<4.0a0
         - async-lru
 
     test:
       imports:
         - alchemiscale
-      requires:
-        - pip
+      files:
+        - test_stack_imports.py
       commands:
-        - pip check
+        - python test_stack_imports.py
 
   - name: alchemiscale-client
     script: build_package.sh
@@ -54,35 +93,27 @@ outputs:
 
     requirements:
       host:
-        - python >=3.9
+        - python >=3.10
         - pip
         - versioningit
       run:
-        - python >=3.9
-        - gufe=0.9.5
-        - openfe=0.14.0
+        - python >=3.10
+        - gufe>=1.0.0
         - requests
         - click
         - httpx
         - pydantic<2.0a0
         - rich
-        - openmoltools
-        - cloudpathlib
-        - dask
-        - distributed
-        - numba
-        - pymbar >=3.0.6,<4.0a0
         - async-lru
         - nest-asyncio
-
 
     test:
       imports:
         - alchemiscale
-      requires:
-        - pip
+      files:
+        - test_stack_imports.py
       commands:
-        - pip check
+        - python test_stack_imports.py
 
 about:
   home: https://github.com/openforcefield/alchemiscale
