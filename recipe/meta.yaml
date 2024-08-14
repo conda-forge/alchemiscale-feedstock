@@ -13,6 +13,53 @@ build:
   number: 0
 
 outputs:
+  - name: alchemiscale-server
+    script: build_package.sh
+    build:
+      noarch: python
+
+    requirements:
+      host:
+        - python >=3.10
+        - pip
+        - versioningit
+      run:
+        - python >=3.10
+        - gufe>=1.0.0
+        - openfe>=1.0.1
+        - requests
+        - click
+        - httpx
+        - pydantic<2.0a0
+        - async-lru
+
+        ## state store
+        - neo4j-python-driver
+        - py2neo
+        - monotonic
+
+        ## object store
+        - boto3        # aws s3
+
+        ## api(s)
+        - fastapi
+        - uvicorn
+        - gunicorn
+        - python-jose
+        - passlib
+        - bcrypt
+        - python-multipart
+        - starlette
+        - cryptography
+
+    test:
+      imports:
+        - alchemiscale
+      requires:
+        - pip
+      commands:
+        - pip check
+
   - name: alchemiscale-compute
     script: build_package.sh
     build:
@@ -20,23 +67,17 @@ outputs:
 
     requirements:
       host:
-        - python >=3.9
+        - python >=3.10
         - pip
         - versioningit
       run:
-        - python >=3.9
-        - gufe=0.9.5
-        - openfe=0.14.0
+        - python >=3.10
+        - gufe>=1.0.0
+        - openfe>=1.0.1
         - requests
         - click
         - httpx
         - pydantic<2.0a0
-        - openmoltools
-        - cloudpathlib
-        - dask
-        - distributed
-        - numba
-        - pymbar >=3.0.6,<4.0a0
         - async-lru
 
     test:
@@ -54,27 +95,20 @@ outputs:
 
     requirements:
       host:
-        - python >=3.9
+        - python >=3.10
         - pip
         - versioningit
       run:
-        - python >=3.9
-        - gufe=0.9.5
-        - openfe=0.14.0
+        - python >=3.10
+        - gufe>=1.0.0
+        - openfe>=1.0.1
         - requests
         - click
         - httpx
         - pydantic<2.0a0
         - rich
-        - openmoltools
-        - cloudpathlib
-        - dask
-        - distributed
-        - numba
-        - pymbar >=3.0.6,<4.0a0
         - async-lru
         - nest-asyncio
-
 
     test:
       imports:
