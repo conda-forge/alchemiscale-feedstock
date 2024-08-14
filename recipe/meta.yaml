@@ -26,7 +26,6 @@ outputs:
       run:
         - python >=3.10
         - gufe>=1.0.0
-        - openfe>=1.0.1
         - requests
         - click
         - httpx
@@ -73,7 +72,6 @@ outputs:
       run:
         - python >=3.10
         - gufe>=1.0.0
-        - openfe>=1.0.1
         - requests
         - click
         - httpx
@@ -101,7 +99,6 @@ outputs:
       run:
         - python >=3.10
         - gufe>=1.0.0
-        - openfe>=1.0.1
         - requests
         - click
         - httpx
