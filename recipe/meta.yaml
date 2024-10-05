@@ -22,6 +22,7 @@ outputs:
       host:
         - python >=3.10
         - pip
+        - setuptools
         - versioningit
       run:
         - python >=3.10
@@ -68,6 +69,7 @@ outputs:
       host:
         - python >=3.10
         - pip
+        - setuptools
         - versioningit
       run:
         - python >=3.10
@@ -95,6 +97,7 @@ outputs:
       host:
         - python >=3.10
         - pip
+        - setuptools
         - versioningit
       run:
         - python >=3.10
