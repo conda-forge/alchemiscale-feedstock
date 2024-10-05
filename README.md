@@ -55,6 +55,23 @@ a high-throughput alchemical free energy execution system
 for use with HPC, cloud, bare metal, and Folding@Home
 
 
+About alchemiscale-server
+-------------------------
+
+Home: https://github.com/openforcefield/alchemiscale
+
+Package license: MIT
+
+Summary: high-throughput alchemical free energy execution system
+
+Development: https://github.com/openforcefield/alchemiscale
+
+Documentation: https://docs.alchemiscale.org/
+
+a high-throughput alchemical free energy execution system
+for use with HPC, cloud, bare metal, and Folding@Home
+
+
 Current build status
 ====================
 
@@ -75,6 +92,7 @@ Current release info
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-alchemiscale--client-green.svg)](https://anaconda.org/conda-forge/alchemiscale-client) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/alchemiscale-client.svg)](https://anaconda.org/conda-forge/alchemiscale-client) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/alchemiscale-client.svg)](https://anaconda.org/conda-forge/alchemiscale-client) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/alchemiscale-client.svg)](https://anaconda.org/conda-forge/alchemiscale-client) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-alchemiscale--compute-green.svg)](https://anaconda.org/conda-forge/alchemiscale-compute) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/alchemiscale-compute.svg)](https://anaconda.org/conda-forge/alchemiscale-compute) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/alchemiscale-compute.svg)](https://anaconda.org/conda-forge/alchemiscale-compute) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/alchemiscale-compute.svg)](https://anaconda.org/conda-forge/alchemiscale-compute) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-alchemiscale--server-green.svg)](https://anaconda.org/conda-forge/alchemiscale-server) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/alchemiscale-server.svg)](https://anaconda.org/conda-forge/alchemiscale-server) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/alchemiscale-server.svg)](https://anaconda.org/conda-forge/alchemiscale-server) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/alchemiscale-server.svg)](https://anaconda.org/conda-forge/alchemiscale-server) |
 
 Installing alchemiscale
 =======================
@@ -86,16 +104,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `alchemiscale-client, alchemiscale-compute` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `alchemiscale-client, alchemiscale-compute, alchemiscale-server` can be installed with `conda`:
 
 ```
-conda install alchemiscale-client alchemiscale-compute
+conda install alchemiscale-client alchemiscale-compute alchemiscale-server
 ```
 
 or with `mamba`:
 
 ```
-mamba install alchemiscale-client alchemiscale-compute
+mamba install alchemiscale-client alchemiscale-compute alchemiscale-server
 ```
 
 It is possible to list all of the versions of `alchemiscale-client` available on your platform with `conda`:
