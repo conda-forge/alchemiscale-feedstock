@@ -26,7 +26,7 @@ outputs:
         - versioningit
       run:
         - python >=3.10
-        - gufe>=1.0.0
+        - gufe>=1.1.0
         - requests
         - click
         - httpx
@@ -52,6 +52,9 @@ outputs:
         - starlette
         - cryptography
 
+        ## temporary pins
+        - openff-units<=0.2.2
+
     test:
       imports:
         - alchemiscale
@@ -73,12 +76,15 @@ outputs:
         - versioningit
       run:
         - python >=3.10
-        - gufe>=1.0.0
+        - gufe>=1.1.0
         - requests
         - click
         - httpx
         - pydantic<2.0a0
         - async-lru
+
+        ## temporary pins
+        - openff-units<=0.2.2
 
     test:
       imports:
@@ -101,7 +107,7 @@ outputs:
         - versioningit
       run:
         - python >=3.10
-        - gufe>=1.0.0
+        - gufe>=1.1.0
         - requests
         - click
         - httpx
@@ -109,6 +115,9 @@ outputs:
         - rich
         - async-lru
         - nest-asyncio
+
+        ## temporary pins
+        - openff-units<=0.2.2
 
     test:
       imports:
