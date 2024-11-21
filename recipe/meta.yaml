@@ -1,5 +1,5 @@
 {% set name = "alchemiscale" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.2" %}
 
 package:
   name: alchemiscale
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/openforcefield/alchemiscale/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 5a6bc3eda97c41b06408fe1880e147ef6068f89448ba5df87589ba85411606e7
+  sha256: d27e2aeec3c3efa0858ca58b1a0bb73e241f55dfec010040c8e1485a1647c49a
 
 build:
   number: 0
@@ -26,7 +26,7 @@ outputs:
         - versioningit
       run:
         - python >=3.10
-        - gufe>=1.0.0
+        - gufe>=1.1.0
         - requests
         - click
         - httpx
@@ -52,6 +52,9 @@ outputs:
         - starlette
         - cryptography
 
+        ## temporary pins
+        - openff-units<=0.2.2
+
     test:
       imports:
         - alchemiscale
@@ -73,12 +76,15 @@ outputs:
         - versioningit
       run:
         - python >=3.10
-        - gufe>=1.0.0
+        - gufe>=1.1.0
         - requests
         - click
         - httpx
         - pydantic<2.0a0
         - async-lru
+
+        ## temporary pins
+        - openff-units<=0.2.2
 
     test:
       imports:
@@ -101,7 +107,7 @@ outputs:
         - versioningit
       run:
         - python >=3.10
-        - gufe>=1.0.0
+        - gufe>=1.1.0
         - requests
         - click
         - httpx
@@ -109,6 +115,9 @@ outputs:
         - rich
         - async-lru
         - nest-asyncio
+
+        ## temporary pins
+        - openff-units<=0.2.2
 
     test:
       imports:
