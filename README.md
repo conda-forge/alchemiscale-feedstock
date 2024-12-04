@@ -7,13 +7,13 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/alchemiscale-fe
 About alchemiscale
 ------------------
 
-Home: https://github.com/openforcefield/alchemiscale
+Home: https://github.com/OpenFreeEnergy/alchemiscale
 
 Package license: MIT
 
 Summary: high-throughput alchemical free energy execution system
 
-Development: https://github.com/openforcefield/alchemiscale
+Development: https://github.com/OpenFreeEnergy/alchemiscale
 
 Documentation: https://docs.alchemiscale.org/
 
@@ -24,13 +24,13 @@ for use with HPC, cloud, bare metal, and Folding@Home
 About alchemiscale-client
 -------------------------
 
-Home: https://github.com/openforcefield/alchemiscale
+Home: https://github.com/OpenFreeEnergy/alchemiscale
 
 Package license: MIT
 
 Summary: high-throughput alchemical free energy execution system
 
-Development: https://github.com/openforcefield/alchemiscale
+Development: https://github.com/OpenFreeEnergy/alchemiscale
 
 Documentation: https://docs.alchemiscale.org/
 
@@ -41,13 +41,13 @@ for use with HPC, cloud, bare metal, and Folding@Home
 About alchemiscale-compute
 --------------------------
 
-Home: https://github.com/openforcefield/alchemiscale
+Home: https://github.com/OpenFreeEnergy/alchemiscale
 
 Package license: MIT
 
 Summary: high-throughput alchemical free energy execution system
 
-Development: https://github.com/openforcefield/alchemiscale
+Development: https://github.com/OpenFreeEnergy/alchemiscale
 
 Documentation: https://docs.alchemiscale.org/
 
@@ -58,13 +58,13 @@ for use with HPC, cloud, bare metal, and Folding@Home
 About alchemiscale-server
 -------------------------
 
-Home: https://github.com/openforcefield/alchemiscale
+Home: https://github.com/OpenFreeEnergy/alchemiscale
 
 Package license: MIT
 
 Summary: high-throughput alchemical free energy execution system
 
-Development: https://github.com/openforcefield/alchemiscale
+Development: https://github.com/OpenFreeEnergy/alchemiscale
 
 Documentation: https://docs.alchemiscale.org/
 
