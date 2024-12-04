@@ -1,13 +1,13 @@
 {% set name = "alchemiscale" %}
-{% set version = "0.5.2" %}
+{% set version = "0.5.3" %}
 
 package:
   name: alchemiscale
   version: {{ version }}
 
 source:
-  url: https://github.com/openforcefield/alchemiscale/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: d27e2aeec3c3efa0858ca58b1a0bb73e241f55dfec010040c8e1485a1647c49a
+  url: https://github.com/OpenFreeEnergy/alchemiscale/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 316c1378d7e76023f6fa75b994647ac608758aad2b68101a31fa77fc53b8c699
 
 build:
   number: 0
@@ -128,7 +128,7 @@ outputs:
         - python test_stack_imports.py
 
 about:
-  home: https://github.com/openforcefield/alchemiscale
+  home: https://github.com/OpenFreeEnergy/alchemiscale
   summary: 'high-throughput alchemical free energy execution system'
   description: |
     a high-throughput alchemical free energy execution system 
@@ -137,7 +137,7 @@ about:
   license_family: MIT
   license_file: LICENSE
   doc_url: https://docs.alchemiscale.org/
-  dev_url: https://github.com/openforcefield/alchemiscale
+  dev_url: https://github.com/OpenFreeEnergy/alchemiscale
 
 extra:
   recipe-maintainers:
