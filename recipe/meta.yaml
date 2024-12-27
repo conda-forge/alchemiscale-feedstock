@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "alchemiscale" %}
 {% set version = "0.5.3" %}
 
@@ -10,7 +11,7 @@ source:
   sha256: 316c1378d7e76023f6fa75b994647ac608758aad2b68101a31fa77fc53b8c699
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: alchemiscale-server
@@ -20,12 +21,12 @@ outputs:
 
     requirements:
       host:
-        - python >=3.10
+        - python {{ python_min }}
         - pip
         - setuptools
         - versioningit
       run:
-        - python >=3.10
+        - python >={{ python_min }}
         - gufe>=1.1.0
         - requests
         - click
@@ -56,6 +57,8 @@ outputs:
         - openff-units<=0.2.2
 
     test:
+      requires:
+        - python {{ python_min }}
       imports:
         - alchemiscale
       files:
@@ -70,12 +73,12 @@ outputs:
 
     requirements:
       host:
-        - python >=3.10
+        - python {{ python_min }}
         - pip
         - setuptools
         - versioningit
       run:
-        - python >=3.10
+        - python >={{ python_min }}
         - gufe>=1.1.0
         - requests
         - click
@@ -87,6 +90,8 @@ outputs:
         - openff-units<=0.2.2
 
     test:
+      requires:
+        - python {{ python_min }}
       imports:
         - alchemiscale
       files:
@@ -101,12 +106,12 @@ outputs:
 
     requirements:
       host:
-        - python >=3.10
+        - python {{ python_min }}
         - pip
         - setuptools
         - versioningit
       run:
-        - python >=3.10
+        - python >={{ python_min }}
         - gufe>=1.1.0
         - requests
         - click
@@ -120,6 +125,8 @@ outputs:
         - openff-units<=0.2.2
 
     test:
+      requires:
+        - python {{ python_min }}
       imports:
         - alchemiscale
       files:
