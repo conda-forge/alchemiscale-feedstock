@@ -1,4 +1,4 @@
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 {% set name = "alchemiscale" %}
 {% set version = "0.6.0" %}
 
@@ -27,11 +27,11 @@ outputs:
         - versioningit
       run:
         - python >={{ python_min }}
-        - gufe>=1.1.0
+        - gufe >=1.2.0
         - requests
         - click
         - httpx
-        - pydantic<2.0a0
+        - pydantic >2
         - async-lru
 
         ## state store
@@ -54,7 +54,7 @@ outputs:
         - cryptography
 
         ## temporary pins
-        - openff-units<=0.2.2
+        - openff-units <=0.2.2
 
     test:
       requires:
@@ -79,15 +79,15 @@ outputs:
         - versioningit
       run:
         - python >={{ python_min }}
-        - gufe>=1.1.0
+        - gufe >=1.2.0
         - requests
         - click
         - httpx
-        - pydantic<2.0a0
+        - pydantic >2
         - async-lru
 
         ## temporary pins
-        - openff-units<=0.2.2
+        - openff-units <=0.2.2
 
     test:
       requires:
@@ -112,17 +112,17 @@ outputs:
         - versioningit
       run:
         - python >={{ python_min }}
-        - gufe>=1.1.0
+        - gufe >=1.2.0
         - requests
         - click
         - httpx
-        - pydantic<2.0a0
+        - pydantic >2
         - rich
         - async-lru
         - nest-asyncio
 
         ## temporary pins
-        - openff-units<=0.2.2
+        - openff-units <=0.2.2
 
     test:
       requires:
