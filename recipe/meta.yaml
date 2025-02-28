@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "alchemiscale" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1-1" %}
 
 package:
   name: alchemiscale
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/OpenFreeEnergy/alchemiscale/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 60884c1b2b7afdac998ffdc3d0d82a19d76eb9094717ac823ee917b46fac4297
+  sha256: affa7be617a498c4c170d46c0702b4f60c0ac072c010facf2a61cd6e601f1fca
 
 build:
   number: 0
