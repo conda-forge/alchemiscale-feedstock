@@ -32,6 +32,7 @@ outputs:
         - click
         - httpx
         - pydantic >2
+        - pydantic-settings
         - async-lru
         - zstandard
         - diskcache
@@ -57,7 +58,7 @@ outputs:
 
         ## temporary pins
         - openff-units <=0.2.2
-        - openff-interchange <=0.4.1    # https://github.com/openmm/openmmforcefields/issues/365
+        - openff-interchange >=0.3.18,<0.4.2
 
     test:
       requires:
@@ -87,13 +88,14 @@ outputs:
         - click
         - httpx
         - pydantic >2
+        - pydantic-settings
         - async-lru
         - zstandard
         - diskcache
 
         ## temporary pins
         - openff-units <=0.2.2
-        - openff-interchange <=0.4.1    # https://github.com/openmm/openmmforcefields/issues/365
+        - openff-interchange >=0.3.18,<0.4.2
 
     test:
       requires:
@@ -123,6 +125,7 @@ outputs:
         - click
         - httpx
         - pydantic >2
+        - pydantic-settings
         - rich
         - async-lru
         - zstandard
@@ -131,7 +134,7 @@ outputs:
 
         ## temporary pins
         - openff-units <=0.2.2
-        - openff-interchange <=0.4.1    # https://github.com/openmm/openmmforcefields/issues/365
+        - openff-interchange >=0.3.18,<0.4.2
 
     test:
       requires:
