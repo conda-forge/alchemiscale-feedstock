@@ -11,7 +11,7 @@ source:
   sha256: 4804dc95f53226553ca25716e51a99ce46e0ba74033f15316f8a00549f9782c1
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: alchemiscale-server
