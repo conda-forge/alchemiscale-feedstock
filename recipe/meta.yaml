@@ -34,6 +34,7 @@ outputs:
         - pydantic >2
         - async-lru
         - zstandard
+        - diskcache
 
         ## state store
         - neo4j-python-driver
