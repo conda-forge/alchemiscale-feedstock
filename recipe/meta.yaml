@@ -64,9 +64,9 @@ outputs:
       imports:
         - alchemiscale
       files:
-        - test_stack_imports.py
+        - test_server_imports.py
       commands:
-        - python test_stack_imports.py
+        - python test_server_imports.py
 
   - name: alchemiscale-compute
     script: build_package.sh
@@ -100,9 +100,9 @@ outputs:
       imports:
         - alchemiscale
       files:
-        - test_stack_imports.py
+        - test_compute_imports.py
       commands:
-        - python test_stack_imports.py
+        - python test_compute_imports.py
 
   - name: alchemiscale-client
     script: build_package.sh
@@ -138,9 +138,9 @@ outputs:
       imports:
         - alchemiscale
       files:
-        - test_stack_imports.py
+        - test_client_imports.py
       commands:
-        - python test_stack_imports.py
+        - python test_client_imports.py
 
 about:
   home: https://github.com/OpenFreeEnergy/alchemiscale
