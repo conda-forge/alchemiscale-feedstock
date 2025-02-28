@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "alchemiscale" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: alchemiscale
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/OpenFreeEnergy/alchemiscale/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 60884c1b2b7afdac998ffdc3d0d82a19d76eb9094717ac823ee917b46fac4297
+  sha256: 4804dc95f53226553ca25716e51a99ce46e0ba74033f15316f8a00549f9782c1
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: alchemiscale-server
@@ -32,7 +32,10 @@ outputs:
         - click
         - httpx
         - pydantic >2
+        - pydantic-settings
         - async-lru
+        - zstandard
+        - diskcache
 
         ## state store
         - neo4j-python-driver
@@ -55,6 +58,7 @@ outputs:
 
         ## temporary pins
         - openff-units <=0.2.2
+        - openff-interchange >=0.3.18,<0.4.2
 
     test:
       requires:
@@ -62,9 +66,9 @@ outputs:
       imports:
         - alchemiscale
       files:
-        - test_stack_imports.py
+        - test_server_imports.py
       commands:
-        - python test_stack_imports.py
+        - python test_server_imports.py
 
   - name: alchemiscale-compute
     script: build_package.sh
@@ -84,10 +88,14 @@ outputs:
         - click
         - httpx
         - pydantic >2
+        - pydantic-settings
         - async-lru
+        - zstandard
+        - diskcache
 
         ## temporary pins
         - openff-units <=0.2.2
+        - openff-interchange >=0.3.18,<0.4.2
 
     test:
       requires:
@@ -95,9 +103,9 @@ outputs:
       imports:
         - alchemiscale
       files:
-        - test_stack_imports.py
+        - test_compute_imports.py
       commands:
-        - python test_stack_imports.py
+        - python test_compute_imports.py
 
   - name: alchemiscale-client
     script: build_package.sh
@@ -117,12 +125,16 @@ outputs:
         - click
         - httpx
         - pydantic >2
+        - pydantic-settings
         - rich
         - async-lru
+        - zstandard
+        - diskcache
         - nest-asyncio
 
         ## temporary pins
         - openff-units <=0.2.2
+        - openff-interchange >=0.3.18,<0.4.2
 
     test:
       requires:
@@ -130,9 +142,9 @@ outputs:
       imports:
         - alchemiscale
       files:
-        - test_stack_imports.py
+        - test_client_imports.py
       commands:
-        - python test_stack_imports.py
+        - python test_client_imports.py
 
 about:
   home: https://github.com/OpenFreeEnergy/alchemiscale
