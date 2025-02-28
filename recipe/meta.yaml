@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "alchemiscale" %}
-{% set version = "0.6.1-1" %}
+{% set version = "0.6.1" %}
 
 package:
   name: alchemiscale
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/OpenFreeEnergy/alchemiscale/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: affa7be617a498c4c170d46c0702b4f60c0ac072c010facf2a61cd6e601f1fca
+  sha256: 4804dc95f53226553ca25716e51a99ce46e0ba74033f15316f8a00549f9782c1
 
 build:
   number: 0
@@ -55,6 +55,7 @@ outputs:
 
         ## temporary pins
         - openff-units <=0.2.2
+        - openff-interchange <=0.4.1    # https://github.com/openmm/openmmforcefields/issues/365
 
     test:
       requires:
@@ -88,6 +89,7 @@ outputs:
 
         ## temporary pins
         - openff-units <=0.2.2
+        - openff-interchange <=0.4.1    # https://github.com/openmm/openmmforcefields/issues/365
 
     test:
       requires:
@@ -123,6 +125,7 @@ outputs:
 
         ## temporary pins
         - openff-units <=0.2.2
+        - openff-interchange <=0.4.1    # https://github.com/openmm/openmmforcefields/issues/365
 
     test:
       requires:
