@@ -97,7 +97,7 @@ outputs:
         ## temporary pins
         - openff-units <=0.2.2
         - openff-interchange >=0.3.18,<0.4.2
-        - libsqlite<3.49  # newer versions cause diskcache to fail
+        - libsqlite <3.49  # newer versions cause diskcache to fail
 
     test:
       requires:
@@ -137,7 +137,7 @@ outputs:
         ## temporary pins
         - openff-units <=0.2.2
         - openff-interchange >=0.3.18,<0.4.2
-        - libsqlite<3.49  # newer versions cause diskcache to fail
+        - libsqlite <3.49  # newer versions cause diskcache to fail
 
     test:
       requires:
