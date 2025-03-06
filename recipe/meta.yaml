@@ -71,7 +71,7 @@ outputs:
         - test_server_imports.py
       commands:
         - python test_server_imports.py
-        - python -c "import alchemiscale; assert(alchemiscale.__version__== '{{ version }}')"
+        - python -c "import alchemiscale; assert(alchemiscale.__version__ == '{{ version }}')"
 
   - name: alchemiscale-compute
     script: build_package.sh
@@ -110,7 +110,7 @@ outputs:
         - test_compute_imports.py
       commands:
         - python test_compute_imports.py
-        - python -c "import alchemiscale; assert(alchemiscale.__version__== '{{ version }}')"
+        - python -c "import alchemiscale; assert(alchemiscale.__version__ == '{{ version }}')"
 
   - name: alchemiscale-client
     script: build_package.sh
@@ -151,7 +151,7 @@ outputs:
         - test_client_imports.py
       commands:
         - python test_client_imports.py
-        - python -c "import alchemiscale; assert(alchemiscale.__version__== '{{ version }}')"
+        - python -c "import alchemiscale; assert(alchemiscale.__version__ == '{{ version }}')"
 
 about:
   home: https://github.com/OpenFreeEnergy/alchemiscale
