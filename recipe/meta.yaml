@@ -11,7 +11,7 @@ source:
   sha256: 4804dc95f53226553ca25716e51a99ce46e0ba74033f15316f8a00549f9782c1
 
 build:
-  number: 1
+  number: 2
 
 outputs:
   - name: alchemiscale-server
@@ -59,6 +59,7 @@ outputs:
         ## temporary pins
         - openff-units <=0.2.2
         - openff-interchange >=0.3.18,<0.4.2
+        - libsqlite <3.49  # newer versions cause diskcache to fail
 
     test:
       requires:
@@ -96,6 +97,7 @@ outputs:
         ## temporary pins
         - openff-units <=0.2.2
         - openff-interchange >=0.3.18,<0.4.2
+        - libsqlite <3.49  # newer versions cause diskcache to fail
 
     test:
       requires:
@@ -135,6 +137,7 @@ outputs:
         ## temporary pins
         - openff-units <=0.2.2
         - openff-interchange >=0.3.18,<0.4.2
+        - libsqlite <3.49  # newer versions cause diskcache to fail
 
     test:
       requires:
