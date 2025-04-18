@@ -167,6 +167,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - ianmkenney
     - dotsdl
     - hmacdope
     - mikemhenry
