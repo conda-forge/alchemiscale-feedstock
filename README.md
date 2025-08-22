@@ -210,5 +210,6 @@ Feedstock Maintainers
 
 * [@dotsdl](https://github.com/dotsdl/)
 * [@hmacdope](https://github.com/hmacdope/)
+* [@ianmkenney](https://github.com/ianmkenney/)
 * [@mikemhenry](https://github.com/mikemhenry/)
 
