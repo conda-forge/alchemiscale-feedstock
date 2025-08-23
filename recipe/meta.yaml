@@ -12,7 +12,7 @@ source:
   git_depth: -1
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: alchemiscale-server
@@ -58,8 +58,7 @@ outputs:
         - cryptography
 
         ## temporary pins
-        - openff-units <=0.2.2
-        - openff-interchange >=0.3.18,<0.4.2
+        - openff-interchange >=0.3.18,!=0.4.2
         - libsqlite <3.49  # newer versions cause diskcache to fail
 
     test:
@@ -97,8 +96,7 @@ outputs:
         - diskcache
 
         ## temporary pins
-        - openff-units <=0.2.2
-        - openff-interchange >=0.3.18,<0.4.2
+        - openff-interchange >=0.3.18,!=0.4.2
         - libsqlite <3.49  # newer versions cause diskcache to fail
 
     test:
@@ -138,8 +136,7 @@ outputs:
         - nest-asyncio
 
         ## temporary pins
-        - openff-units <=0.2.2
-        - openff-interchange >=0.3.18,<0.4.2
+        - openff-interchange >=0.3.18,!=0.4.2
         - libsqlite <3.49  # newer versions cause diskcache to fail
 
     test:
