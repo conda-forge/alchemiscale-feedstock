@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "alchemiscale" %}
-{% set version = "0.6.2" %}
+{% set version = "0.7.0" %}
 
 package:
   name: alchemiscale
@@ -12,7 +12,7 @@ source:
   git_depth: -1
 
 build:
-  number: 1
+  number: 0
 
 outputs:
   - name: alchemiscale-server
@@ -37,6 +37,7 @@ outputs:
         - async-lru
         - zstandard
         - diskcache
+        - stratocaster
 
         ## state store
         - neo4j-python-driver
@@ -94,6 +95,7 @@ outputs:
         - async-lru
         - zstandard
         - diskcache
+        - stratocaster
 
         ## temporary pins
         - openff-interchange >=0.3.18,!=0.4.2
@@ -134,6 +136,7 @@ outputs:
         - zstandard
         - diskcache
         - nest-asyncio
+        - stratocaster
 
         ## temporary pins
         - openff-interchange >=0.3.18,!=0.4.2
