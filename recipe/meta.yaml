@@ -37,6 +37,7 @@ outputs:
         - async-lru
         - zstandard
         - diskcache
+        - stratocaster
 
         ## state store
         - neo4j-python-driver
@@ -94,6 +95,7 @@ outputs:
         - async-lru
         - zstandard
         - diskcache
+        - stratocaster
 
         ## temporary pins
         - openff-interchange >=0.3.18,!=0.4.2
@@ -134,6 +136,7 @@ outputs:
         - zstandard
         - diskcache
         - nest-asyncio
+        - stratocaster
 
         ## temporary pins
         - openff-interchange >=0.3.18,!=0.4.2
