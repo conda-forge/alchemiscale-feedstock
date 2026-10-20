@@ -1,6 +1,5 @@
-{% set python_min = "3.11" %}
 {% set name = "alchemiscale" %}
-{% set version = "0.7.2" %}
+{% set version = "0.8.0" %}
 
 package:
   name: alchemiscale
@@ -28,7 +27,7 @@ outputs:
         - setuptools-scm
       run:
         - python >={{ python_min }}
-        - gufe >=1.2.0
+        - gufe >=1.8.0
         - requests
         - click
         - httpx
@@ -86,7 +85,7 @@ outputs:
         - setuptools-scm
       run:
         - python >={{ python_min }}
-        - gufe >=1.2.0
+        - gufe >=1.8.0
         - requests
         - click
         - httpx
@@ -125,7 +124,7 @@ outputs:
         - setuptools-scm
       run:
         - python >={{ python_min }}
-        - gufe >=1.2.0
+        - gufe >=1.8.0
         - requests
         - click
         - httpx
