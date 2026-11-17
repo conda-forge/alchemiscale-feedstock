@@ -58,9 +58,6 @@ outputs:
         - starlette
         - cryptography
 
-        ## temporary pins
-        - openff-interchange >=0.3.18,!=0.4.2
-
     test:
       requires:
         - python {{ python_min }}
@@ -95,9 +92,6 @@ outputs:
         - zstandard
         - diskcache
         - stratocaster
-
-        ## temporary pins
-        - openff-interchange >=0.3.18,!=0.4.2
 
     test:
       requires:
@@ -134,9 +128,6 @@ outputs:
         - zstandard
         - diskcache
         - stratocaster
-
-        ## temporary pins
-        - openff-interchange >=0.3.18,!=0.4.2
 
     test:
       requires:
