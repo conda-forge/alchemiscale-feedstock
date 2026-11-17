@@ -1,5 +1,6 @@
 {% set name = "alchemiscale" %}
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
+{% set python_min = "3.12" %}
 
 package:
   name: alchemiscale
@@ -57,10 +58,6 @@ outputs:
         - starlette
         - cryptography
 
-        ## temporary pins
-        - openff-interchange >=0.3.18,!=0.4.2
-        - libsqlite <3.49  # newer versions cause diskcache to fail
-
     test:
       requires:
         - python {{ python_min }}
@@ -96,10 +93,6 @@ outputs:
         - diskcache
         - stratocaster
 
-        ## temporary pins
-        - openff-interchange >=0.3.18,!=0.4.2
-        - libsqlite <3.49  # newer versions cause diskcache to fail
-
     test:
       requires:
         - python {{ python_min }}
@@ -134,12 +127,7 @@ outputs:
         - async-lru
         - zstandard
         - diskcache
-        - nest-asyncio
         - stratocaster
-
-        ## temporary pins
-        - openff-interchange >=0.3.18,!=0.4.2
-        - libsqlite <3.49  # newer versions cause diskcache to fail
 
     test:
       requires:
